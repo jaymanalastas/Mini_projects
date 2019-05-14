@@ -52,13 +52,26 @@
 
 #6 # use this formula Q = square root of [(2*c*d)/h] c = 50 h= 30
 
-c = 50
-h = 30
+# c = 50
+# h = 30
+#
+# import math
+#
+# x = []
+# y =[i for i in input('Enter int here: ').split(',')]
+# for d in y:
+#     x.append(str(int(round(math.sqrt((2*c*float(d))/h)))))
+# print(','.join(x))
 
-import math
+#7 take 2 digits, x and y as inputs and generate 2 dimensional arry
 
-x = []
-y =[i for i in input('Enter int here: ').split(',')]
-for d in y:
-    x.append(str(int(round(math.sqrt((2*c*float(d))/h)))))
-print(','.join(x))
+input_for_system = input('Enter input :')
+dimension = [int(x) for x in input_for_system.split(',')]
+rowin = dimension[0]
+colin = dimension[1]
+list =[[0 for column in range(colin)] for rows in range(rowin)]
+
+for row in range(rowin):
+    for col in range(colin):
+        list[row][col] = row*col
+print(list)
