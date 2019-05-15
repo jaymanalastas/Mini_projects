@@ -23,7 +23,7 @@ print('I need more money')
 
 
 
-#never forget the inifinite code = meaning it never hits a false
+#never forget the infinite code = meaning it never hits a false
 
  # x = 5
  # while x > 3: #make this conditional true for infinite loop
