@@ -28,6 +28,7 @@
 # print('Season is, {}'.format(season))
 
 # give me date of birth and I will give you your sign
+
 month = input('Input birth month: ')
 day = int(input('Input birth day: '))
 

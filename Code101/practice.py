@@ -72,7 +72,7 @@
 #         list[row][col]= row*col
 # print(list)
 
+#
+#Alphabet Soup
 
-a = 'crEate'
-
-print(''.join(sorted(a)))
+2**38
