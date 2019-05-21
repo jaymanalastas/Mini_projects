@@ -3,9 +3,9 @@
 # empty_list = []
 #
 # for i in range(400,500):
-#     if (i%7==0) and (i%5!=0):
+#     if (i%7 ==0) and (i%5!=0):
 #         empty_list.append(str(i))
-# print(','.join(empty_list))
+#     print(' '.join(empty_list))
 
 #2 factorials of of a number input
 
@@ -13,36 +13,38 @@
 #     if num ==0:
 #         return 1
 #     return num * factorial(num-1)
-# print('Enter int here: ')
+# print("please input a int: ")
 # num = int(input())
 # print(factorial(num))
 
 #3 create a dictionary - of square
 
-# n = int(input('Enter int here: '))
+# n = int(input('Please Enter String here: '))
 # d = dict()
-# for i in range(1,n+1):
+# for i in range(1, n+1):
 #     d[i] = i**2
 # print(d)
 
+
 #4 Cs numbers for both tuple and list
 
-# values = str(input('Enter cs number: '))
+# values = input('Enter a number that is cs: ')
 # a = values.split()
 # b = tuple(a)
 # print(a,b)
 
-
-#5 Class Mama
+#5 Class Mama (Creating an Upper case String)
 
 # class Mama(object):
 #     def __init__(self):
 #         self.s = ''
 #     def getString(self):
-#         self.s = input('Enter string here: ')
+#         self.s = input('Enter String here: ')
 #     def printString(self):
 #         print(self.s.upper())
+#
 # x = Mama()
+#
 # x.getString()
 # x.printString()
 
@@ -75,4 +77,3 @@
 #
 #Alphabet Soup
 
-2**38
