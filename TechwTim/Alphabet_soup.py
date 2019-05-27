@@ -16,7 +16,7 @@
 # word = input('Please Enter a String: ')
 # print(alphabetSoup(word))
 
-Part B  - alphabetize the string w/ upper and lower case character
+# Part B  - alphabetize the string w/ upper and lower case character
 
 def alphabetSoup(string):
     li = sorted(list(string))
