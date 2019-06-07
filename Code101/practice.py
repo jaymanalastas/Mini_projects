@@ -77,3 +77,15 @@
 #
 #Alphabet Soup
 
+
+def not_string(str):
+  newString = ''
+  for i in str():
+    if i != 'n':
+      newString.appened('not ' + str)
+    else:
+      newString += str()
+  print(newString)
+word = input('Please Enter String here:')
+
+print(not_string(word))
