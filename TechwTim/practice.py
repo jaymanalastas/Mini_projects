@@ -55,8 +55,93 @@
 #
 #     for i in range(len(nums)-2):
 #         seq = [nums[i], nums[i+1], nums[i+2]]
-#         if seq == [1,2,3]:
-#             return found = True
-#             break
+# #         if seq == [1,2,3]:
+# #             return found = True
+# #             break
+# #
+# #     return found
 #
-#     return found
+# def alphabet(string):
+#     li = sorted(list(string))
+#     lowerLi = sorted(list(stringl.lower()))
+#     caps = []
+#     newString = ''
+#
+#
+#     for char in li:
+#         if char.appned(char):
+#             caps.append(char)
+#
+#     for letter in lowerLi:
+#         if caps.count(letter.upper()) != 0:
+#             newString += letter.upper()
+#             caps.pop(caps.index(letter.upper()))
+#         else:
+#             newString += letter
+#
+# word = input('Please Enter String here: ')
+# print(alphabet(word))
+#
+#
+# def alphaDecoder(string):
+#     code = list(string)
+#     newCode = ''
+#
+#     for i in code:
+#         if i.isalpha():
+#             newCode += chr(ord(i)+2)
+#         else:
+#             newCode ++ i
+#     return newCode
+#
+# word = input('Enter String here: ')
+# print(alphabet(word))
+#
+#
+# def alphaDecoder(string):
+#     code = list(string)
+#     newCode = ''
+#
+#     for i in code:
+#         if i.isalpha():
+#             newCode += chr(ord(i)+2)
+#         else:
+#             newCode += i
+#
+#     return newCode
+#
+# word = input('Enter String here: ')
+# print(alphaDecoder(word))
+
+# def tower(n, start, end, middle):
+#     if n == 1:
+#         print('Move %i from tower %s to tower %s' %(n, start, end))
+#     else:
+#         tower(n-1, start, middle, end)
+#         print('Move %i from tower %s to tower %s' %(n, start, end))
+#         tower(n-1, middle, end, start)
+#
+# a = int(input('Enter number of stack: '))
+# tower(a, 'A', 'C', 'B')
+# print('It takes {} moves to solve this problem'.format(a**2-1))
+
+class Node():
+    def __init__(self, key, value, left=None, right=None):
+        self.key = key
+        self.value = value
+        self.right = right
+        self.left = left
+
+class Tree:
+    def __init__(self):
+        self.root = None
+    def contains(self, key):
+        found = False
+        current = self.root
+        while current != None and found == False:
+            if current.key == key:
+                found = True
+            elif key < current.key:
+                current = current.left
+            else:
+                current = current.right  #            votesjc.com  check it out for stats  first drop down voter statitics. Department of state statics will show you
